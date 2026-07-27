@@ -194,7 +194,7 @@ a:hover { text-decoration: underline; }
 /* ---- FOOTER ---- */
 .footer { background: var(--black); padding: 56px 0 0; }
 .footer-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding-bottom: 48px; }
-.footer-logo-img { height: 44px; width: auto; object-fit: contain; margin-bottom: 8px; display: block; }
+.footer-logo-img { height: 220px; width: auto; object-fit: contain; margin-bottom: 8px; display: block; }
 .footer-brand p { color: rgba(255,255,255,0.4); font-size: 0.88rem; margin-top: 10px; }
 .footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .footer-col { display: flex; flex-direction: column; gap: 8px; }
