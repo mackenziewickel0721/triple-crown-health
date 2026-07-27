@@ -57,6 +57,51 @@
         opacity: 0.12;
       }
     }
+  
+    .tch-testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .tch-testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: box-shadow 0.2s;
+    }
+    .tch-testimonial-card:hover { box-shadow: var(--shadow-lg); }
+    .tch-featured {
+      border-color: var(--gold);
+      box-shadow: 0 4px 24px rgba(201,168,76,0.12);
+    }
+    .tch-stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; }
+    .tch-quote {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+      flex: 1;
+    }
+    .tch-author {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .tch-name { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+    .tch-source { font-size: 0.75rem; color: var(--text-light); }
+    .tch-reviews-cta { text-align: center; margin-top: 8px; }
+    @media (max-width: 640px) {
+      .tch-testimonials-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -136,6 +181,60 @@
       </div>
       <div class="states-list">AL &#183; CO &#183; FL &#183; GA &#183; IL &#183; IN &#183; KS &#183; KY &#183; MD &#183; MI &#183; MS &#183; MO &#183; MT &#183; NE &#183; NV &#183; NC &#183; OH &#183; SC &#183; SD &#183; TN &#183; TX &#183; UT &#183; VA &#183; WV &#183; WI &#183; WY</div>
       <div class="states-note">Don't see your state? <a href="quote.html">Ask anyway</a> — the list is growing.</div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Client Reviews</div>
+        <h2>Real people. Real results.</h2>
+        <p>Here's what clients say about working with MacKenzie.</p>
+      </div>
+      <div class="tch-testimonials-grid">
+
+        <div class="tch-testimonial-card tch-featured">
+          <div class="tch-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="tch-quote">"I had an amazing experience getting my health insurance through Triple Crown Health! MacKenzie made the entire process quick, easy, and completely stress-free. She was incredibly friendly, knowledgeable, and took the time to answer all of my questions while helping me find the best coverage for my needs."</p>
+          <div class="tch-author">
+            <div class="tch-name">Amber H.</div>
+            <div class="tch-source">&#9632; Google Review</div>
+          </div>
+        </div>
+
+        <div class="tch-testimonial-card">
+          <div class="tch-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="tch-quote">"MacKenzie Wickel was great and very thorough. She explained everything so simply and made it easier for the overall process. I highly recommend her as your health insurance broker!"</p>
+          <div class="tch-author">
+            <div class="tch-name">Toshita K.</div>
+            <div class="tch-source">&#9632; Google Review</div>
+          </div>
+        </div>
+
+        <div class="tch-testimonial-card">
+          <div class="tch-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="tch-quote">"MacKenzie was incredibly helpful! Trying to figure out health insurance is daunting, but she explained everything clearly, helped me find the best plan, and did the application with me over the phone. She followed up to make sure everything went smoothly, and made herself available to answer questions even after applying."</p>
+          <div class="tch-author">
+            <div class="tch-name">Jenna T.</div>
+            <div class="tch-source">&#9632; Google Review</div>
+          </div>
+        </div>
+
+        <div class="tch-testimonial-card">
+          <div class="tch-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="tch-quote">"MacKenzie was great to work with. She was very professional and thorough in explaining the various plans. She found the best option for me and my family and the enrollment process was quick and smooth. I strongly recommend her."</p>
+          <div class="tch-author">
+            <div class="tch-name">Susanna L.</div>
+            <div class="tch-source">&#9632; Google Review</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tch-reviews-cta">
+        <a href="https://g.page/r/CQmCniNIzao6EAE/review" target="_blank" rel="noopener" class="btn btn-outline">See all reviews on Google &#8599;</a>
+      </div>
     </div>
   </section>
 
