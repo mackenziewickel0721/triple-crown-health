@@ -102,7 +102,179 @@
     @media (max-width: 640px) {
       .tch-testimonials-grid { grid-template-columns: 1fr; }
     }
+  
+    .tch-faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .tch-faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .tch-faq-item:last-child { border-bottom: none; }
+    .tch-faq-question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 24px;
+      background: var(--white);
+      border: none;
+      cursor: pointer;
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-align: left;
+      gap: 16px;
+      transition: background 0.15s;
+    }
+    .tch-faq-question:hover { background: var(--off-white); }
+    .tch-faq-question[aria-expanded="true"] { background: var(--off-white); color: var(--gold); }
+    .tch-faq-icon {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+    .tch-faq-question[aria-expanded="true"] .tch-faq-icon {
+      transform: rotate(45deg);
+    }
+    .tch-faq-answer {
+      display: none;
+      padding: 0 24px 20px;
+      background: var(--off-white);
+    }
+    .tch-faq-answer.open { display: block; }
+    .tch-faq-answer p {
+      font-size: 0.93rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+    }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "name": "Triple Crown Health",
+    "description": "Independent health insurance brokerage helping self-employed workers, 1099 contractors, and families find personalized health coverage. ACA and private plans compared side by side at no cost to you.",
+    "url": "https://www.triplecrownhealth.com",
+    "telephone": "+15023960754",
+    "email": "mackenzie@triplecrownhealth.com",
+    "founder": {
+      "@type": "Person",
+      "name": "MacKenzie Wickel",
+      "jobTitle": "Independent Health Insurance Broker"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5701 E Hillsborough Ave",
+      "addressLocality": "Tampa",
+      "addressRegion": "FL",
+      "postalCode": "33610",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 27.9806,
+      "longitude": -82.3893
+    },
+    "areaServed": [
+      "Alabama","Colorado","Florida","Georgia","Illinois","Indiana",
+      "Kansas","Kentucky","Maryland","Michigan","Mississippi","Missouri",
+      "Montana","Nebraska","Nevada","North Carolina","Ohio","South Carolina",
+      "South Dakota","Tennessee","Texas","Utah","Virginia","West Virginia",
+      "Wisconsin","Wyoming"
+    ],
+    "priceRange": "Free consultation",
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "sameAs": [
+      "https://www.linkedin.com/in/kenzie-wickel"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Health Insurance Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "ACA Marketplace Plans"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Private Health Insurance"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Short-Term Health Coverage"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Health Insurance Policies"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Health Insurance for Self-Employed"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "1099 Contractor Health Insurance"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Family Health Insurance Plans"}}
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "29",
+      "bestRating": "5"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does using a health insurance broker cost money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Health insurance brokers like MacKenzie Wickel are paid by the insurance carrier, never by the client. The price of a plan is identical whether you use a broker or enroll directly. You get expert guidance and ongoing support at zero cost to you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between ACA and private health insurance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ACA (Affordable Care Act) plans are offered through the government Marketplace and may include income-based subsidies that reduce your monthly premium. Private health insurance is purchased directly from carriers outside the Marketplace, often with lower premiums for healthy individuals who earn too much for subsidies. Triple Crown Health compares both options side by side for your specific situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get health insurance if I am self-employed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Self-employed individuals have access to ACA Marketplace plans, private health insurance, and short-term coverage. MacKenzie Wickel specializes in helping self-employed workers and 1099 contractors find the right plan for their income and health needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can I get health insurance coverage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Private health insurance can be approved and active within 24 to 48 hours in many cases. ACA Marketplace plans typically take 2 to 4 weeks depending on enrollment timing. Triple Crown Health helps you find the fastest path to coverage for your situation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What states does Triple Crown Health serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Triple Crown Health is licensed in 25+ states including Florida, Texas, Georgia, Kentucky, Tennessee, North Carolina, Ohio, Virginia, and more. Contact us to confirm coverage in your state."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to my health insurance when I leave my job?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When you leave a job you typically have 60 days to enroll in a new plan through a Special Enrollment Period. Your options include COBRA, ACA Marketplace plans, and private health insurance. COBRA is often the most expensive option. MacKenzie can compare all three and find the best fit quickly."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -214,6 +386,81 @@
     </div>
   </section>
 
+
+
+  <!-- FAQ SECTION -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Common Questions</div>
+        <h2>Everything you want to know before calling.</h2>
+        <p>Straight answers to the questions MacKenzie hears most often.</p>
+      </div>
+      <div class="tch-faq-list">
+
+        <div class="tch-faq-item">
+          <button class="tch-faq-question" aria-expanded="false">
+            Does using a health insurance broker cost money?
+            <span class="tch-faq-icon">+</span>
+          </button>
+          <div class="tch-faq-answer">
+            <p>No. MacKenzie is paid by the insurance carrier, never by you. The price of any plan is identical whether you use a broker or enroll directly. You get expert guidance and ongoing support at zero cost to you.</p>
+          </div>
+        </div>
+
+        <div class="tch-faq-item">
+          <button class="tch-faq-question" aria-expanded="false">
+            What's the difference between ACA and private health insurance?
+            <span class="tch-faq-icon">+</span>
+          </button>
+          <div class="tch-faq-answer">
+            <p>ACA plans are offered through the government Marketplace and may include income-based subsidies that significantly reduce your monthly premium. Private health insurance is purchased directly from carriers — often with lower premiums for healthy individuals who earn too much for subsidies. MacKenzie compares both side by side for your specific situation.</p>
+          </div>
+        </div>
+
+        <div class="tch-faq-item">
+          <button class="tch-faq-question" aria-expanded="false">
+            Can I get health insurance if I'm self-employed or a 1099 contractor?
+            <span class="tch-faq-icon">+</span>
+          </button>
+          <div class="tch-faq-answer">
+            <p>Absolutely. Self-employed workers and 1099 contractors have access to ACA Marketplace plans, private health insurance, and short-term coverage. MacKenzie specializes in building coverage around non-traditional income situations.</p>
+          </div>
+        </div>
+
+        <div class="tch-faq-item">
+          <button class="tch-faq-question" aria-expanded="false">
+            How quickly can I get covered?
+            <span class="tch-faq-icon">+</span>
+          </button>
+          <div class="tch-faq-answer">
+            <p>Private health insurance can be approved and active within 24 to 48 hours in many cases. ACA Marketplace plans typically take 2 to 4 weeks depending on enrollment timing. MacKenzie helps you find the fastest path to coverage for your situation.</p>
+          </div>
+        </div>
+
+        <div class="tch-faq-item">
+          <button class="tch-faq-question" aria-expanded="false">
+            What happens to my health insurance when I leave my job?
+            <span class="tch-faq-icon">+</span>
+          </button>
+          <div class="tch-faq-answer">
+            <p>When you leave a job you have 60 days to enroll in a new plan through a Special Enrollment Period. Your options include COBRA, ACA Marketplace plans, and private health insurance. COBRA is almost always the most expensive option — MacKenzie can compare all three and find the best fit quickly.</p>
+          </div>
+        </div>
+
+        <div class="tch-faq-item">
+          <button class="tch-faq-question" aria-expanded="false">
+            What states does Triple Crown Health serve?
+            <span class="tch-faq-icon">+</span>
+          </button>
+          <div class="tch-faq-answer">
+            <p>Triple Crown Health is licensed in 25+ states including Florida, Texas, Georgia, Kentucky, Tennessee, North Carolina, Ohio, Virginia, and more. Don't see your state? Reach out anyway — the list is growing.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- TESTIMONIALS -->
   <section class="section section-light">
