@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Get a free health insurance quote or book a call with MacKenzie Wickel — independent broker at Triple Crown Health, licensed in 25+ states." />
-  <meta property="og:title" content="Get a Free Quote | Triple Crown Health" />
+  <meta name="description" content="Health insurance tips, guides, and resources from MacKenzie Wickel at Triple Crown Health — for self-employed workers, families, and anyone navigating coverage on their own." />
+  <meta property="og:title" content="Health Insurance Resources | Triple Crown Health" />
   <meta property="og:image" content="https://www.triplecrownhealth.com/og-image.png" />
-  <title>Get a Free Quote | Triple Crown Health</title>
+  <title>Health Insurance Resources | Triple Crown Health</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "InsuranceAgency",
-    "name": "Triple Crown Health",
-    "description": "Independent health insurance brokerage helping self-employed workers, 1099 contractors, and families find personalized health coverage across 25+ states.",
-    "url": "https://www.triplecrownhealth.com",
-    "telephone": "+15023960754",
-    "email": "mackenzie@triplecrownhealth.com",
-    "founder": {"@type": "Person", "name": "MacKenzie Wickel", "jobTitle": "Independent Health Insurance Broker"},
-    "address": {"@type": "PostalAddress", "streetAddress": "5701 E Hillsborough Ave", "addressLocality": "Tampa", "addressRegion": "FL", "postalCode": "33610", "addressCountry": "US"},
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "29", "bestRating": "5"}
-  }
-  </script>
+  <style>
+    .blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+    .blog-card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:12px; transition:box-shadow 0.2s; }
+    .blog-card:hover { box-shadow:var(--shadow-lg); }
+    .blog-meta { display:flex; align-items:center; gap:12px; }
+    .blog-tag { font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; background:var(--gold-dim); color:var(--gold); padding:4px 10px; border-radius:20px; }
+    .blog-date { font-size:0.8rem; color:var(--text-light); }
+    .blog-card h2 { font-size:1.1rem; line-height:1.35; }
+    .blog-card h2 a { color:var(--text); text-decoration:none; }
+    .blog-card h2 a:hover { color:var(--gold); }
+    .blog-card p { font-size:0.88rem; flex:1; }
+    .blog-read { font-size:0.88rem; font-weight:600; color:var(--gold); text-decoration:none; }
+    .blog-read:hover { text-decoration:underline; }
+    @media (max-width:900px) { .blog-grid { grid-template-columns:1fr; } }
+  </style>
 </head>
 <body>
 
@@ -38,89 +38,66 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" >Home</a></li><li><a href="about.html" >About</a></li><li><a href="blog.html">Resources</a></li>
-        <li><a href="quote.html" class="active">Get a Quote</a></li><li><a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener" class="nav-cta">Book a Call</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Resources</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener" class="nav-cta">Book a Call</a></li>
       </ul>
     </div>
   </nav>
 
   <section class="page-hero">
     <div class="container">
-      <div class="eyebrow">Get started</div>
-      <h1>Let's find what actually fits.</h1>
-      <p>Fill out the form below and MacKenzie will follow up within one business day — usually faster.</p>
+      <div class="eyebrow">Resources</div>
+      <h1>Straight answers about health insurance.</h1>
+      <p>No jargon, no agenda. Honest guidance from an independent broker who's seen it all.</p>
     </div>
   </section>
 
   <section class="section section-light">
-    <div class="container quote-layout">
-      <div class="quote-form-wrap">
-        <div class="form-intro">
-          <h2>Request a free quote</h2>
-          <p>No spam, no pressure. Just a straight answer about your options.</p>
-        </div>
-        <form class="quote-form" id="quoteForm" action="https://formspree.io/f/mrenognp" method="POST">
-          <div class="form-row">
-            <div class="form-group"><label for="firstName">First name</label><input type="text" id="firstName" name="firstName" placeholder="Jane" required /></div>
-            <div class="form-group"><label for="lastName">Last name</label><input type="text" id="lastName" name="lastName" placeholder="Smith" required /></div>
+    <div class="container">
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-tag">Family Coverage</span>
+            <span class="blog-date">July 2025</span>
           </div>
-          <div class="form-row">
-            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="jane@example.com" required /></div>
-            <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" /></div>
+          <h2><a href="blog-employer-coverage-too-expensive.html">Employer Coverage Too Expensive for Your Family? Here's What to Do.</a></h2>
+          <p>Adding a spouse or kids to your employer plan can cost $1,000+ per month. Most people don't know there are better, cheaper options available right now.</p>
+          <a href="blog-employer-coverage-too-expensive.html" class="blog-read">Read article &#8594;</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-tag">Using a Broker</span>
+            <span class="blog-date">July 2025</span>
           </div>
-          <div class="form-group">
-            <label for="state">State</label>
-            <select id="state" name="state">
-              <option value="">Select your state</option>
-              <option>Alabama</option><option>Colorado</option><option>Florida</option><option>Georgia</option><option>Illinois</option><option>Indiana</option><option>Kansas</option><option>Kentucky</option><option>Maryland</option><option>Michigan</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>North Carolina</option><option>Ohio</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Virginia</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option><option>Other</option>
-            </select>
+          <h2><a href="blog-is-health-insurance-broker-a-scam.html">Is a Health Insurance Broker a Scam? The Honest Answer.</a></h2>
+          <p>Skeptical? Good. Here's exactly how brokers get paid, what they actually do, and why working with one costs you absolutely nothing.</p>
+          <a href="blog-is-health-insurance-broker-a-scam.html" class="blog-read">Read article &#8594;</a>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-meta">
+            <span class="blog-tag">Private Plans</span>
+            <span class="blog-date">July 2025</span>
           </div>
-          <div class="form-group">
-            <label for="situation">Who needs coverage?</label>
-            <select id="situation" name="situation">
-              <option value="">Select one</option>
-              <option>Just me</option><option>Me + spouse / partner</option><option>Me + children</option><option>My whole family</option>
-            </select>
-          </div>
-          <div class="form-group"><label for="ages">Ages of everyone needing coverage</label><input type="text" id="ages" name="ages" placeholder="e.g. 34, 32, 6" /></div>
-          <div class="form-group">
-            <label for="notes">Anything MacKenzie should know? <span class="optional">(optional)</span></label>
-            <textarea id="notes" name="notes" rows="3" placeholder="Pre-existing conditions, specific doctors, income situation, etc."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-large btn-full">Send my request</button>
-          <p class="form-note">MacKenzie will reach out within 1 business day. Your info is never sold or shared.</p>
-        </form>
-        <div class="form-success" id="formSuccess" style="display:none;">
-          <div class="success-icon">&#10003;</div>
-          <h3>You're all set.</h3>
-          <p>MacKenzie will be in touch shortly.</p>
-        </div>
+          <h2><a href="blog-private-health-insurance-high-income.html">Private Health Insurance for High Earners — Why It Often Beats ACA Plans.</a></h2>
+          <p>If you earn too much for ACA subsidies, private health insurance can cost significantly less. Here's what high-income individuals need to know.</p>
+          <a href="blog-private-health-insurance-high-income.html" class="blog-read">Read article &#8594;</a>
+        </article>
+
       </div>
-      <div class="quote-sidebar">
-        <div class="sidebar-card">
-          <h3>Prefer to call?</h3>
-          <a href="tel:5023960754" class="phone-link">(502) 396-0754</a>
-          <p>Direct line to MacKenzie. No automated menus.</p>
-        </div>
-        <div class="sidebar-card">
-          <h3>Prefer to schedule online?</h3>
-          <a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener" class="btn btn-primary btn-full" style="margin-top:4px;">Book on Calendly &#8599;</a>
-          <p style="margin-top:10px;">Pick a time that works for you.</p>
-        </div>
-        <div class="sidebar-card">
-          <h3>What to expect</h3>
-          <ul class="expect-list">
-            <li>Response within 1 business day</li>
-            <li>20-minute call to understand your needs</li>
-            <li>Side-by-side plan comparison</li>
-            <li>Zero pressure, zero fees</li>
-          </ul>
-        </div>
-        <div class="sidebar-card">
-          <h3>Licensed in your state?</h3>
-          <div class="states-mini">AL &#183; CO &#183; FL &#183; GA &#183; IL &#183; IN &#183; KS &#183; KY &#183; MD &#183; MI &#183; MS &#183; MO &#183; MT &#183; NE &#183; NV &#183; NC &#183; OH &#183; SC &#183; SD &#183; TN &#183; TX &#183; UT &#183; VA &#183; WV &#183; WI &#183; WY</div>
-        </div>
-      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Have a question not covered here?</h2>
+      <p>Book a free 20-minute call and get a straight answer for your specific situation.</p>
+      <a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener" class="btn btn-primary btn-large">Book a Free Call</a>
     </div>
   </section>
 
@@ -135,6 +112,7 @@
           <div class="footer-col-title">Pages</div>
           <a href="index.html">Home</a>
           <a href="about.html">About MacKenzie</a>
+          <a href="blog.html">Resources</a>
           <a href="quote.html">Get a Quote</a>
         </div>
         <div class="footer-col">
