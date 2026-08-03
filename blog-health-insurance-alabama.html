@@ -3,34 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Health insurance resources, guides, and state-specific coverage information from MacKenzie Wickel at Triple Crown Health." />
-  <meta property="og:title" content="Health Insurance Resources | Triple Crown Health" />
+  <meta name="description" content="Searching for health insurance in Alabama? Triple Crown Health helps Alabama residents find affordable ACA and private health insurance — personalized for your income, family, and health needs." />
+  <meta property="og:title" content="Health Insurance in Alabama — Coverage Options for Individuals, Families & the Self-Employed" />
+  <meta property="og:description" content="Searching for health insurance in Alabama? Triple Crown Health helps Alabama residents find affordable ACA and private health insurance — personalized for your income, family, and health needs." />
   <meta property="og:image" content="https://www.triplecrownhealth.com/og-image.png" />
-  <title>Health Insurance Resources | Triple Crown Health</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.triplecrownhealth.com/blog-health-insurance-alabama.html" />
+  <meta name="keywords" content="health insurance Alabama, self-employed health insurance Alabama, private health insurance AL, health insurance broker Alabama, ACA marketplace Alabama, family health insurance Alabama, affordable health insurance Birmingham" />
+  <title>Health Insurance in Alabama — Coverage Options for Individuals, Families & the Self-Employed | Triple Crown Health</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
-    .blog-section-title { font-size:1.1rem; color:var(--text-light); font-weight:600; letter-spacing:0.08em; text-transform:uppercase; margin:48px 0 24px; padding-bottom:12px; border-bottom:2px solid var(--gold); display:inline-block; }
-    .blog-card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:12px; transition:box-shadow 0.2s; }
-    .blog-card:hover { box-shadow:var(--shadow-lg); }
-    .blog-meta { display:flex; align-items:center; gap:12px; }
-    .blog-tag { font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; background:var(--gold-dim); color:var(--gold); padding:4px 10px; border-radius:20px; }
-    .blog-date { font-size:0.8rem; color:var(--text-light); }
-    .blog-card h2 { font-size:1rem; line-height:1.35; }
-    .blog-card h2 a { color:var(--text); text-decoration:none; }
-    .blog-card h2 a:hover { color:var(--gold); }
-    .blog-card p { font-size:0.88rem; flex:1; }
-    .blog-read { font-size:0.88rem; font-weight:600; color:var(--gold); text-decoration:none; }
-    .blog-read:hover { text-decoration:underline; }
-    @media (max-width:900px) { .blog-grid { grid-template-columns:1fr 1fr; } }
-    @media (max-width:600px) { .blog-grid { grid-template-columns:1fr; } }
+    .article-hero { background: var(--navy); padding: 72px 0 56px; }
+    .article-hero .eyebrow { color: var(--gold-light); }
+    .article-hero h1 { color: var(--white); max-width: 760px; }
+    .article-meta { display:flex; gap:16px; align-items:center; margin-top:16px; flex-wrap:wrap; }
+    .article-meta span { font-size:0.82rem; color:rgba(255,255,255,0.5); }
+    .article-tag { background:var(--gold-dim); color:var(--gold); font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:4px 10px; border-radius:20px; }
+    .article-layout { display:grid; grid-template-columns:1fr 300px; gap:56px; align-items:start; padding:64px 0; }
+    .article-body { max-width:680px; }
+    .article-body h2 { font-size:1.5rem; color:var(--text); margin:36px 0 12px; }
+    .article-body h3 { font-size:1.15rem; color:var(--text); margin:24px 0 8px; }
+    .article-body p  { margin-bottom:18px; font-size:0.97rem; line-height:1.8; color:var(--text-mid); }
+    .article-body ul { padding-left:20px; margin-bottom:18px; display:flex; flex-direction:column; gap:8px; }
+    .article-body li { font-size:0.97rem; color:var(--text-mid); line-height:1.7; }
+    .article-body strong { color:var(--text); font-weight:600; }
+    .article-pull { border-left:3px solid var(--gold); padding:16px 20px; background:var(--gold-pale); border-radius:0 var(--radius) var(--radius) 0; margin:28px 0; font-family:'Lora',serif; font-style:italic; font-size:1.05rem; color:var(--text); }
+    .article-sidebar { display:flex; flex-direction:column; gap:20px; position:sticky; top:88px; }
+    @media (max-width:900px) { .article-layout { grid-template-columns:1fr; padding:40px 0; } .article-sidebar { position:static; } }
   </style>
 </head>
 <body>
-
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">
@@ -42,152 +47,65 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="blog.html" class="active">Resources</a></li>
+        <li><a href="blog.html">Resources</a></li>
         <li><a href="quote.html">Get a Quote</a></li>
         <li><a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener" class="nav-cta">Book a Call</a></li>
       </ul>
     </div>
   </nav>
-
-  <section class="page-hero">
+  <section class="article-hero">
     <div class="container">
       <div class="eyebrow">Resources</div>
-      <h1>Health insurance guidance you can actually use.</h1>
-      <p>Straight answers, state-specific guides, and honest advice from an independent broker.</p>
+      <h1>Health Insurance in Alabama — Coverage Options for Individuals, Families & the Self-Employed</h1>
+      <div class="article-meta">
+        <span class="article-tag">Alabama</span>
+        <span>By MacKenzie Wickel</span>
+        <span>July 2025</span>
+        <span>6 min read</span>
+      </div>
     </div>
   </section>
 
-  <section class="section section-light">
-    <div class="container">
-
-      <div class="blog-section-title">General Guides</div>
-      <div class="blog-grid">
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-tag">Family Coverage</span><span class="blog-date">July 2025</span></div>
-          <h2><a href="blog-employer-coverage-too-expensive.html">Employer Coverage Too Expensive for Your Family? Here's What to Do.</a></h2>
-          <p>Adding a spouse or kids to your employer plan can cost $1,000+ per month. There are better, cheaper options most people never hear about.</p>
-          <a href="blog-employer-coverage-too-expensive.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-tag">Using a Broker</span><span class="blog-date">July 2025</span></div>
-          <h2><a href="blog-is-health-insurance-broker-a-scam.html">Is a Health Insurance Broker a Scam? The Honest Answer.</a></h2>
-          <p>Skeptical? Here's exactly how brokers get paid, what they do, and why working with one costs you absolutely nothing.</p>
-          <a href="blog-is-health-insurance-broker-a-scam.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-tag">Private Plans</span><span class="blog-date">July 2025</span></div>
-          <h2><a href="blog-private-health-insurance-high-income.html">Private Health Insurance for High Earners — Why It Often Beats ACA Plans.</a></h2>
-          <p>If you earn too much for ACA subsidies, private health insurance can cost significantly less. Here's what high-income individuals need to know.</p>
-          <a href="blog-private-health-insurance-high-income.html" class="blog-read">Read article &#8594;</a>
-        </article>
-      </div>
-
-      <div class="blog-section-title">State Coverage Guides</div>
-      <div class="blog-grid">
-        
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Texas</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-texas.html">Health Insurance in Texas — Options for Individuals, Families & the Self-Employed</a></h2>
-          <p>Whether you're self-employed in Austin, a 1099 contractor in Houston, or a family in Dallas looking for better options — Triple Crown Health compares every plan available in Texas.</p>
-          <a href="blog-health-insurance-texas.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Florida</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-florida.html">Health Insurance in Florida — Finding the Right Coverage for Your Situation</a></h2>
-          <p>From Tampa to Miami to Jacksonville, Triple Crown Health helps Florida residents find affordable ACA and private health insurance options that fit their actual life.</p>
-          <a href="blog-health-insurance-florida.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Maryland</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-maryland.html">Health Insurance in Maryland — Personalized Coverage for Individuals & Families</a></h2>
-          <p>Maryland's high cost of living makes finding affordable health insurance especially important. Triple Crown Health compares Maryland Health Connection and private plans for the right fit.</p>
-          <a href="blog-health-insurance-maryland.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Georgia</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-georgia.html">Health Insurance in Georgia — Coverage for Families, Freelancers & the Self-Employed</a></h2>
-          <p>From Atlanta to Savannah, Triple Crown Health helps Georgia residents cut through the confusion and find coverage that actually works for their income and health needs.</p>
-          <a href="blog-health-insurance-georgia.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Illinois</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-illinois.html">Health Insurance in Illinois — Individual, Family & Self-Employed Coverage Options</a></h2>
-          <p>Chicago's growing independent workforce needs individual health coverage. Triple Crown Health compares Get Covered Illinois and private plans for the right solution.</p>
-          <a href="blog-health-insurance-illinois.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Ohio</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-ohio.html">Health Insurance in Ohio — Affordable Coverage for Individuals, Families & Freelancers</a></h2>
-          <p>From Columbus to Cleveland, Triple Crown Health helps Ohio residents find ACA and private health insurance options that fit their budget and health situation.</p>
-          <a href="blog-health-insurance-ohio.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Colorado</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-colorado.html">Health Insurance in Colorado — Coverage for the Self-Employed, Families & Freelancers</a></h2>
-          <p>Colorado's entrepreneurial workforce needs flexible individual coverage. Triple Crown Health compares Connect for Health Colorado and private plans side by side.</p>
-          <a href="blog-health-insurance-colorado.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Tennessee</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-tennessee.html">Health Insurance in Tennessee — Affordable Options for Individuals & Families</a></h2>
-          <p>Nashville's boom has brought a wave of self-employed professionals who need individual health coverage. Triple Crown Health finds the right plan for Tennessee residents.</p>
-          <a href="blog-health-insurance-tennessee.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Alabama</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-alabama.html">Health Insurance in Alabama — Coverage Options for Individuals, Families & the Self-Employed</a></h2>
-          <p>Triple Crown Health helps Alabama residents find real, affordable health insurance options — from ACA Marketplace plans to private coverage for higher earners.</p>
-          <a href="blog-health-insurance-alabama.html" class="blog-read">Read article &#8594;</a>
-        </article>
-        <article class="blog-card">
-          <div class="blog-meta">
-            <span class="blog-tag">Indiana</span>
-            <span class="blog-date">July 2025</span>
-          </div>
-          <h2><a href="blog-health-insurance-indiana.html">Health Insurance in Indiana — Affordable Coverage for Families, Freelancers & Individuals</a></h2>
-          <p>From Indianapolis to Fort Wayne, Triple Crown Health helps Indiana residents compare ACA and private health insurance to find the most affordable option for their situation.</p>
-          <a href="blog-health-insurance-indiana.html" class="blog-read">Read article &#8594;</a>
-        </article>
-      </div>
-
+  <div class="container">
+    <div class="article-layout">
+      <article class="article-body">
+        <p>Alabama has one of the highest uninsured rates in the country — a reality driven largely by the state's decision not to expand Medicaid and by the complexity of navigating the federal health insurance Marketplace without guidance. For many Alabama residents, the assumption is that health insurance is simply unaffordable. That assumption is often wrong.</p>
+        <p>Triple Crown Health works with Alabama residents across Birmingham, Huntsville, Mobile, Montgomery, and beyond to find coverage options that fit real budgets and real lives. From ACA Marketplace plans with subsidy savings to private health insurance for higher earners — the options are broader than most people realize.</p>
+        <div class="article-pull">"Alabama's private health insurance market has improved significantly in recent years, with more carrier options and more competitive pricing than a decade ago. For self-employed Alabamians and households above ACA subsidy thresholds, private plans are worth a serious look."</div>
+        <h2>Alabama's Health Insurance Market</h2>
+        <p>Alabama uses the federal Marketplace at healthcare.gov. The state has not expanded Medicaid, which means adults below the ACA subsidy threshold but above Medicaid eligibility face a coverage gap. For those who qualify for ACA subsidies — generally earning between 100% and 400% of the federal poverty level — Marketplace plans with subsidy savings are available and often affordable. For higher earners, private health insurance is frequently the better path.</p>
+        <h2>Huntsville's Growing Professional Population</h2>
+        <p>Huntsville in particular has seen dramatic growth driven by aerospace, defense, and technology industries — bringing a wave of contractors, consultants, and self-employed professionals who need individual coverage. Birmingham's healthcare and finance sectors have similar concentrations of independent workers.</p>
+        <h2>Straightforward Coverage in Alabama</h2>
+        <p>MacKenzie Wickel helps Alabama residents compare every available option in a single 20-minute call. No obligation, no confusion — just a clear picture of what's available, what it costs, and what fits your situation. Coverage can begin within 24 hours for private plans.</p>
+        <p><a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener"><strong>Book a free 20-minute call with MacKenzie</strong></a> — no pressure, no obligation, just a straight answer about what fits your situation in Alabama.</p>
+      </article>
+            <aside class="article-sidebar">
+        <div class="sidebar-card">
+          <h3>Talk to MacKenzie</h3>
+          <a href="tel:5023960754" class="phone-link">(502) 396-0754</a>
+          <p>Direct line. No menus, no hold music.</p>
+        </div>
+        <div class="sidebar-card">
+          <h3>Book a free call</h3>
+          <a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener" class="btn btn-primary btn-full" style="margin-top:4px;">Schedule on Calendly &#8599;</a>
+          <p style="margin-top:10px;">20 minutes. No pressure.</p>
+        </div>
+        <div class="sidebar-card">
+          <h3>Related reading</h3>
+          <ul class="expect-list"><li><a href="blog-health-insurance-tennessee.html">Health insurance in Tennessee</a></li><li><a href="blog-health-insurance-georgia.html">Health insurance in Georgia</a></li><li><a href="blog-is-health-insurance-broker-a-scam.html">Is a health insurance broker legit?</a></li></ul>
+        </div>
+      </aside>
     </div>
-  </section>
+  </div>
 
-  <section class="cta-band">
+    <section class="cta-band">
     <div class="container">
       <h2>Book a Free 20-Minute Call to Learn Your Options.</h2>
       <p>No pressure, no jargon — just a straight conversation about what fits your life.</p>
-      <a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener" class="btn btn-primary btn-large">Book a Free Call</a>
+      <a href="https://calendly.com/wickelhealthsolutions/health-insurance-consultation" target="_blank" rel="noopener" class="btn btn-primary btn-large">Book Your Free Call</a>
     </div>
   </section>
-
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
@@ -215,7 +133,6 @@
       <span>Licensed Insurance Broker</span>
     </div>
   </footer>
-
   <script src="main.js"></script>
 </body>
 </html>
